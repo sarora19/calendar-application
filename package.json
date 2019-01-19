@@ -1,0 +1,17 @@
+{
+  "name": "calendar-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd calendar-application && npm start",
+    "server": "cd server && nodemon server.js",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "3.5.1"
+  },
+  "description": ""
+}
